@@ -39,18 +39,22 @@ on the screen with it's sprite and name. Clicking on pokeball icon navigates to 
 Second fragment shows more information about pokemon that was chosen on first fragment. It contains it's sprite, name, id, height, weight, types and moves.
 <br /> <br />
 
-#Main fragment
+**Main fragment**
+<br /> <br />
 <img src="https://i.ibb.co/ZS973mF/Screenshot-from-2021-01-14-21-20-33.png" width="340px">
 <br /> <br />
 
-#Loading new pokemon
+**Loading new pokemon**
+<br /> <br />
 <img src="https://i.ibb.co/pjDKWJb/Screenshot-from-2021-01-14-21-20-48.png" width="340px">
 <br /> <br />
 
-#New pokemon
+**New pokemon**
+<br /> <br />
 <img src="https://i.ibb.co/y8dnMWg/Screenshot-from-2021-01-14-21-21-02.png" width="340px">
 <br /> <br />
 
-#Pokemon info page
+**Pokemon info page**
+<br /> <br />
 <img src="https://i.ibb.co/bvXkM3z/Screenshot-from-2021-01-14-21-21-25.png" width="340px">
 
