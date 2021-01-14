@@ -40,3 +40,16 @@ Second fragment shows more information about pokemon that was chosen on first fr
 
 
 
+<img src="https://i.ibb.co/ZS973mF/Screenshot-from-2021-01-14-21-20-33.png" width="340px">
+Main fragment
+
+
+<img src="https://i.ibb.co/pjDKWJb/Screenshot-from-2021-01-14-21-20-48.png" width="340px">
+Loading new pokemon
+
+<img src="https://i.ibb.co/y8dnMWg/Screenshot-from-2021-01-14-21-21-02.png" width="340px">
+New pokemon
+
+
+<img src="https://i.ibb.co/bvXkM3z/Screenshot-from-2021-01-14-21-21-25.png" width="340px">
+Pokemon info page
