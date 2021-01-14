@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <variable
+            name="searchViewModel"
+            type="com.stanroy.pokesearch.ui.search.PokeSearchViewModel" />
+
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context="ui.search.PokeSearchFragment">
+
+
+        <ImageView
+            android:id="@+id/iv_search_img"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:background="@drawable/poke_list_item_bg"
+            android:contentDescription="@string/pokemon_image"
+            app:layout_constraintBottom_toTopOf="@+id/tv_poke_name"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/tv_poke_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/poke_title_bg"
+            android:gravity="center"
+            android:padding="40dp"
+            android:textColor="@color/black"
+            android:textSize="24sp"
+            app:layout_constraintBottom_toBottomOf="parent" />
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/margin_30"
+            android:contentDescription="@string/pokemon_shuffle"
+            android:onClick="@{() -> searchViewModel.nextPokemon()}"
+            android:src="@drawable/ic_shuffle"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:tint="@color/white" />
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/margin_30"
+            android:contentDescription="@string/pokemon_info"
+            android:onClick="@{() -> searchViewModel.navigateToShow()}"
+            android:scaleType="fitCenter"
+            android:src="@drawable/ic_pokeinfo"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:maxImageSize="100dp"
+            app:tint="@color/white" />
+
+
+        <LinearLayout
+            android:id="@+id/pb_pokemon_search"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/poke_list_item_bg"
+            android:backgroundTint="@color/yellow_transparent"
+            android:visibility="gone">
+
+            <ProgressBar
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scaleX="0.6"
+                android:scaleY="0.6" />
+
+
+        </LinearLayout>
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</layout>

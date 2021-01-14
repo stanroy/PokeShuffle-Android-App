@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<layout>
+
+    <data>
+
+        <variable
+            name="pokeShowViewModel"
+            type="com.stanroy.pokesearch.ui.show.PokeShowViewModel" />
+
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".ui.show.PokeShowFragment">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/iv_show_img"
+                    android:layout_width="match_parent"
+                    android:layout_height="250dp"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:background="@color/color_poke_img_bg"
+                    android:contentDescription="@string/pokemon_image"
+                    android:src="@drawable/ic_camera" />
+
+                <LinearLayout
+                    android:id="@+id/ll_poke_info"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/tv_poke_name_show"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/poke_title_bg"
+                        android:gravity="center"
+                        android:padding="25dp"
+                        android:text="@{pokeShowViewModel.pokeName}"
+                        android:textSize="25sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/tv_poke_number"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/poke_info_border"
+                        android:padding="15dp"
+                        android:text="@{pokeShowViewModel.pokeNumberFormat}"
+                        android:textSize="20sp" />
+
+                    <TextView
+                        android:id="@+id/tv_poke_height"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/poke_info_border"
+                        android:padding="15dp"
+                        android:text="@{pokeShowViewModel.pokeHeightFormat}"
+                        android:textSize="20sp" />
+
+                    <TextView
+                        android:id="@+id/tv_poke_weight"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/poke_info_border"
+                        android:padding="15dp"
+                        android:text="@{pokeShowViewModel.pokeWeightFormat}"
+                        android:textSize="20sp" />
+
+                    <TextView
+                        android:id="@+id/tv_poke_types"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/poke_info_border"
+                        android:padding="15dp"
+                        android:text="@{pokeShowViewModel.pokeTypesFormat}"
+                        android:textSize="20sp" />
+
+                    <TextView
+                        android:id="@+id/tv_poke_moves"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/poke_info_border"
+                        android:padding="15dp"
+                        android:text="@{pokeShowViewModel.pokeMovesFormat}"
+                        android:textSize="20sp" />
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+        </ScrollView>
+
+        <!--        <ImageView-->
+        <!--            android:id="@+id/iv_show_img"-->
+        <!--            android:layout_width="match_parent"-->
+        <!--            android:layout_height="250dp"-->
+        <!--            android:layout_gravity="center"-->
+        <!--            android:layout_weight="1"-->
+        <!--            android:background="@color/color_poke_img_bg"-->
+        <!--            android:contentDescription="@string/pokemon_image"-->
+        <!--            android:src="@drawable/ic_camera"-->
+        <!--            app:layout_constraintTop_toTopOf="parent" />-->
+
+        <!--        <LinearLayout-->
+        <!--            android:id="@+id/ll_poke_info"-->
+        <!--            android:layout_width="match_parent"-->
+        <!--            android:layout_height="0dp"-->
+        <!--            android:orientation="vertical"-->
+        <!--            app:layout_constraintBottom_toBottomOf="parent"-->
+        <!--            app:layout_constraintTop_toBottomOf="@+id/iv_show_img">-->
+
+
+        <!--            <TextView-->
+        <!--                android:id="@+id/tv_poke_name_show"-->
+        <!--                android:layout_width="match_parent"-->
+        <!--                android:layout_height="wrap_content"-->
+        <!--                android:background="@drawable/poke_title_bg"-->
+        <!--                android:gravity="center"-->
+        <!--                android:padding="25dp"-->
+        <!--                android:text="@{pokeShowViewModel.pokeName}"-->
+        <!--                android:textSize="25sp"-->
+        <!--                android:textStyle="bold" />-->
+
+        <!--            <TextView-->
+        <!--                android:id="@+id/tv_poke_number"-->
+        <!--                android:layout_width="match_parent"-->
+        <!--                android:layout_height="wrap_content"-->
+        <!--                android:background="@drawable/poke_info_border"-->
+        <!--                android:padding="15dp"-->
+        <!--                android:text="@{pokeShowViewModel.pokeNumberFormat}"-->
+        <!--                android:textSize="20sp" />-->
+
+        <!--            <TextView-->
+        <!--                android:id="@+id/tv_poke_height"-->
+        <!--                android:layout_width="match_parent"-->
+        <!--                android:layout_height="wrap_content"-->
+        <!--                android:background="@drawable/poke_info_border"-->
+        <!--                android:padding="15dp"-->
+        <!--                android:text="@{pokeShowViewModel.pokeHeightFormat}"-->
+        <!--                android:textSize="20sp" />-->
+
+        <!--            <TextView-->
+        <!--                android:id="@+id/tv_poke_weight"-->
+        <!--                android:layout_width="match_parent"-->
+        <!--                android:layout_height="wrap_content"-->
+        <!--                android:background="@drawable/poke_info_border"-->
+        <!--                android:padding="15dp"-->
+        <!--                android:text="@{pokeShowViewModel.pokeWeightFormat}"-->
+        <!--                android:textSize="20sp" />-->
+
+        <!--            <TextView-->
+        <!--                android:id="@+id/tv_poke_types"-->
+        <!--                android:layout_width="match_parent"-->
+        <!--                android:layout_height="wrap_content"-->
+        <!--                android:background="@drawable/poke_info_border"-->
+        <!--                android:padding="15dp"-->
+        <!--                android:text="Types  "-->
+        <!--                android:textSize="20sp" />-->
+
+        <!--            <TextView-->
+        <!--                android:id="@+id/tv_poke_moves"-->
+        <!--                android:layout_width="match_parent"-->
+        <!--                android:layout_height="wrap_content"-->
+        <!--                android:background="@drawable/poke_info_border"-->
+        <!--                android:padding="15dp"-->
+        <!--                android:text="Moves  "-->
+        <!--                android:textSize="20sp" />-->
+
+
+        <!--        </LinearLayout>-->
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</layout>
