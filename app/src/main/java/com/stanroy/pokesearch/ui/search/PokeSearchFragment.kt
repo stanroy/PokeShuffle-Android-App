@@ -13,13 +13,12 @@ import com.stanroy.pokesearch.R
 import com.stanroy.pokesearch.data.entities.PokemonParcelable
 import com.stanroy.pokesearch.databinding.FragmentPokeSearchBinding
 import com.stanroy.pokesearch.ui.util.PokeViewAdapter
-import org.koin.android.viewmodel.ext.android.viewModel
-import timber.log.Timber
+import org.koin.androidx.viewmodel.ext.android.viewModel
 
 
 class PokeSearchFragment : Fragment() {
 
-    private val viewModel: PokeSearchViewModel by viewModel()
+    private val viewModel by viewModel<PokeSearchViewModel>()
     private lateinit var mViewAdapter: PokeViewAdapter
 
     override fun onCreateView(
@@ -57,7 +56,11 @@ class PokeSearchFragment : Fragment() {
                 })
 
             } else {
-                Snackbar.make(requireView(), "No internet connection, trying to reconnect...", Snackbar.LENGTH_SHORT).show()
+                Snackbar.make(
+                    requireView(),
+                    "No internet connection, trying to reconnect...",
+                    Snackbar.LENGTH_SHORT
+                ).show()
             }
 
         })

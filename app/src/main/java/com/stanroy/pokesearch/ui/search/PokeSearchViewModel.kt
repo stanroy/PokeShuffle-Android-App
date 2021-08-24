@@ -1,6 +1,5 @@
 package com.stanroy.pokesearch.ui.search
 
-import android.content.Context
 import android.os.Handler
 import android.os.Looper
 import androidx.lifecycle.LiveData
@@ -15,7 +14,7 @@ import kotlinx.coroutines.launch
 import timber.log.Timber
 import kotlin.random.Random
 
-class PokeSearchViewModel(private val context: Context, private val repository: PokeRepository) :
+class PokeSearchViewModel(private val repository: PokeRepository) :
     ViewModel() {
 
     //ASYNC VARIABLES

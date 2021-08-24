@@ -13,16 +13,15 @@ import com.squareup.picasso.Callback
 import com.squareup.picasso.Picasso
 import com.stanroy.pokesearch.R
 import com.stanroy.pokesearch.databinding.FragmentPokeShowBinding
-import org.koin.android.viewmodel.ext.android.viewModel
-import org.koin.core.parameter.DefinitionParameters
+import org.koin.android.ext.android.inject
+import org.koin.core.parameter.parametersOf
 
 
 class PokeShowFragment : Fragment() {
 
     private val navArgs by navArgs<PokeShowFragmentArgs>()
-    private val viewModel by viewModel<PokeShowViewModel> {
-        DefinitionParameters(listOf(navArgs))
-    }
+    private val viewModel by inject<PokeShowViewModel> { parametersOf(navArgs) }
+
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,

@@ -18,7 +18,10 @@
 
         <ScrollView
             android:layout_width="match_parent"
-            android:layout_height="match_parent">
+            android:layout_height="match_parent"
+            android:fadeScrollbars="true"
+            android:scrollIndicators="bottom"
+            android:scrollbarSize="5dp">
 
 
             <LinearLayout
@@ -32,7 +35,7 @@
                     android:layout_height="250dp"
                     android:layout_gravity="center"
                     android:layout_weight="1"
-                    android:background="@color/color_poke_img_bg"
+                    android:background="@drawable/poke_list_item_bg"
                     android:contentDescription="@string/pokemon_image"
                     android:src="@drawable/ic_camera" />
 
