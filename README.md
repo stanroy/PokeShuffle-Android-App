@@ -8,8 +8,8 @@
 
 <p align="row">
   <p align="center">
-    <img src= "https://i.ibb.co/KDHVPzh/Screenshot-20210824-180647-Pokemon-Shuffle.png" width="200" >
-    <img src= "https://i.ibb.co/Lv4BLcq/Screenshot-20210824-180638-Pokemon-Shuffle.png" width="200" >
+    <img src= "https://i.ibb.co/r7rgDht/img1-600.png" width="200" >
+    <img src= "https://i.ibb.co/RDTSY7R/img2-600.png" width="200" >
    </p>
 </p>
 
